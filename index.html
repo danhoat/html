@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Grid Css - A2</title>
+	<style type="text/css">
+		body{
+			width: 980px;
+			padding: 0 20px;
+			margin: 0 auto;
+			background-repeat: no-repeat;
+			background-position: bottom;
+			  font-family: "Helvetica", Times, serif;
+        	font-weight: 500;
+			color: #fff;
+		}
+		.grid-container {
+		  display: grid;
+		  column-gap: 20px;
+		  padding-top: 20px;
+		  grid-template-columns:  2fr 1fr 1fr;
+		}
+		h1{
+			font-size: 80px;
+			font-weight: 500;
+		}
+		h2{
+			font-size: 40px;
+			font-weight: 500;
+		}
+		.col{
+			padding: 10px;
+			display: inline-flex;
+			background: #0f8ad8;
+			min-height: 330px;
+		}
+		.col-1{
+			align-items:end;
+			text-indent: 15px;
+		}
+		.col-3{
+			align-items: center;
+			text-indent: 15px;
+		}
+		.col-3 h2{
+			display: block;
+			text-align: center;
+		}
+		.col-2{
+			position: relative;
+			text-indent: 15px;
+			background-color: #00a74d;
+		}
+		.read-more{
+			font-size: 12px;
+			text-transform: uppercase;
+			position: absolute;
+			bottom: 20px;
+			color: #fff;
+			text-decoration: none;
+
+		}
+	</style>
+</head>
+<body>
+	<div class="grid-container">
+		<div class="col col-1">
+			<h1> Hello</h1>
+		</div>
+		<div class="col col-2">
+			<h2> Top</h2>
+			<a href="#" class="read-more"> Read More</a>
+		</div>
+		<div class="col col-3">
+			<h2> Middle</h2>
+		</div>
+	</div>
+
+</body>
+</html>
